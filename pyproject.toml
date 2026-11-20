@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "plotnine-treemapify"
+version = "0.1.0"
+description = "Clean-room treemapify geoms for plotnine (squarified treemaps, nested subgroups, and auto-fitted labels)."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib>=3.7",
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "plotnine>=0.13",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/plotnine_treemapify"]
